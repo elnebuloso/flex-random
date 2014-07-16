@@ -9,6 +9,8 @@ namespace Flex\Random\Text;
 class Char {
 
     /**
+     * returns random char
+     *
      * @return string
      */
     public static function get() {

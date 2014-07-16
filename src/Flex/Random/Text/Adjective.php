@@ -9,9 +9,11 @@ namespace Flex\Random\Text;
 class Adjective {
 
     /**
+     * returns random adjective
+     *
      * @param string $char
      * @param string $lang
-     * @return array
+     * @return string
      */
     public static function getAdjective($char = null, $lang = 'en') {
         if(is_null($char)) {
@@ -30,6 +32,8 @@ class Adjective {
     }
 
     /**
+     * returns adjectives for given char
+     *
      * @param string $char
      * @param string $lang
      * @return array
@@ -41,14 +45,19 @@ class Adjective {
     }
 
     /**
+     * returns all adjectives for given language
+     *
      * @param string $lang
      * @return array
      */
     public static function getAdjectiveCollection($lang = 'en') {
-        if(!file_exists(dirname(__FILE__) . '/resources/adjectives.' . $lang . '.php')) {
+        $resources = realpath(dirname(__FILE__) . '/../../../../resources');
+        $include = "/{$lang}/adjectives.php";
+
+        if(!file_exists($resources . $include)) {
             return array();
         }
 
-        return include dirname(__FILE__) . '/resources/adjectives.' . $lang . '.php';
+        return include $resources . $include;
     }
 }
