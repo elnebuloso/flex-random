@@ -9,6 +9,8 @@ chdir(dirname(__DIR__));
 
 // autoloading
 require_once 'vendor/autoload.php';
+
+use Flex\Random\Text\RandomAdjective;
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +38,8 @@ require_once 'vendor/autoload.php';
     <h1>flex-random
         <small>elnebuloso</small>
     </h1>
+
+    <h2>random adjective: <?php echo RandomAdjective::getAdjective(); ?></h2>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

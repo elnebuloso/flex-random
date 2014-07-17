@@ -1,7 +1,7 @@
 <?php
 namespace FlexTest\Random\Text;
 
-use Flex\Random\Text\Adjective;
+use Flex\Random\Text\RandomAdjective;
 
 /**
  * Class AdjectiveTest
@@ -15,30 +15,30 @@ class AdjectiveTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getAdjectiveCollection_isArray() {
-        $this->assertInternalType('array', Adjective::getAdjectiveCollection());
+        $this->assertInternalType('array', RandomAdjective::getAdjectiveCollection());
     }
 
     /**
      * @return void
      */
     public function test_getAdjectiveCollection_countAlphabeticalRange() {
-        $this->assertCount(26, Adjective::getAdjectiveCollection());
-        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(Adjective::getAdjectiveCollection())));
+        $this->assertCount(26, RandomAdjective::getAdjectiveCollection());
+        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(RandomAdjective::getAdjectiveCollection())));
     }
 
     /**
      * @return void
      */
     public function test_getAdjectiveCollection_isArrayForWrongLanguage() {
-        $this->assertInternalType('array', Adjective::getAdjectiveCollection('language'));
-        $this->assertEmpty(Adjective::getAdjectiveCollection('language'));
+        $this->assertInternalType('array', RandomAdjective::getAdjectiveCollection('language'));
+        $this->assertEmpty(RandomAdjective::getAdjectiveCollection('language'));
     }
 
     /**
      * @return void
      */
     public function test_getAdjectives_default() {
-        $words = Adjective::getAdjectives();
+        $words = RandomAdjective::getAdjectives();
 
         $this->assertInternalType('array', $words);
         $this->assertGreaterThan(0, count($words));
@@ -49,7 +49,7 @@ class AdjectiveTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getAdjectives_forChar() {
-        $words = Adjective::getAdjectives('b');
+        $words = RandomAdjective::getAdjectives('b');
 
         $this->assertInternalType('array', $words);
         $this->assertGreaterThan(0, count($words));
@@ -60,7 +60,7 @@ class AdjectiveTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getAdjectives_forWrongChar() {
-        $words = Adjective::getAdjectives('foo');
+        $words = RandomAdjective::getAdjectives('foo');
 
         $this->assertInternalType('array', $words);
         $this->assertEmpty($words);
@@ -70,7 +70,7 @@ class AdjectiveTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getRandomAdjective_default() {
-        $word = Adjective::getAdjective();
+        $word = RandomAdjective::getAdjective();
 
         $this->assertInternalType('string', $word);
     }
@@ -79,7 +79,7 @@ class AdjectiveTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getRandomAdjective_forChar() {
-        $word = Adjective::getAdjective('a');
+        $word = RandomAdjective::getAdjective('a');
         $char = strtolower($word[0]);
 
         $this->assertInternalType('string', $word);
@@ -90,7 +90,7 @@ class AdjectiveTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getRandomAdjective_forWrongChar() {
-        $word = Adjective::getAdjective('foo');
+        $word = RandomAdjective::getAdjective('foo');
 
         $this->assertNull($word);
     }

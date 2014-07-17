@@ -20,7 +20,7 @@ class Project {
             $char = RandomChar::get();
         }
 
-        $adjective = Adjective::getAdjective($char);
+        $adjective = RandomAdjective::getAdjective($char);
         $name = Firstname::getFirstnameMale($char);
 
         if(empty($adjective) || empty($name)) {
@@ -41,7 +41,7 @@ class Project {
             $char = RandomChar::get();
         }
 
-        $adjective = Adjective::getAdjective($char);
+        $adjective = RandomAdjective::getAdjective($char);
         $name = Firstname::getFirstnameFemale($char);
 
         if(empty($adjective) || empty($name)) {
