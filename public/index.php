@@ -12,9 +12,10 @@ require_once 'vendor/autoload.php';
 
 use Flex\Random\Text\RandomAdjective;
 use Flex\Random\Text\RandomChar;
-use Flex\Random\Text\RandomWord;
 use Flex\Random\Text\RandomSentence;
 use Flex\Random\Text\RandomText;
+use Flex\Random\Text\RandomWord;
+
 ?>
 
 <!DOCTYPE html>
@@ -43,33 +44,38 @@ use Flex\Random\Text\RandomText;
         <small>elnebuloso</small>
     </h1>
 
-    <h2>RandomChar::get()
-        <small> <?php echo RandomChar::get(); ?></small>
-    </h2>
-
-    <h2>RandomAdjective::getAdjective()
-        <small> <?php echo RandomAdjective::getAdjective(); ?></small>
-    </h2>
-
-    <h2>RandomWord::get()
-        <small> <?php echo RandomWord::get(); ?></small>
-    </h2>
-
-    <h2>RandomWord::consonant()
-        <small> <?php echo RandomWord::consonant(); ?></small>
-    </h2>
-
-    <h2>RandomWord::vowel()
-        <small> <?php echo RandomWord::vowel(); ?></small>
-    </h2>
-
-    <h2>RandomSentence::get()
-        <small> <?php echo RandomSentence::get(); ?></small>
-    </h2>
-
-    <h2>RandomText::get()
-        <small> <?php echo RandomText::get(); ?></small>
-    </h2>
+    <table class="table table-striped table-bordered">
+        <tbody>
+        <tr>
+            <td>RandomChar::get()</td>
+            <td><?php echo RandomChar::get(); ?></td>
+        </tr>
+        <tr>
+            <td>RandomAdjective::getAdjective()</td>
+            <td><?php echo RandomAdjective::getAdjective(); ?></td>
+        </tr>
+        <tr>
+            <td>RandomWord::get()</td>
+            <td><?php echo RandomWord::get(); ?></td>
+        </tr>
+        <tr>
+            <td>RandomWord::consonant()</td>
+            <td><?php echo RandomWord::consonant(); ?></td>
+        </tr>
+        <tr>
+            <td>RandomWord::vowel()</td>
+            <td><?php echo RandomWord::vowel(); ?></td>
+        </tr>
+        <tr>
+            <td>RandomSentence::get()</td>
+            <td><?php echo RandomSentence::get(); ?></td>
+        </tr>
+        <tr>
+            <td>RandomText::get()</td>
+            <td><?php echo RandomText::get(); ?></td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
