@@ -4,6 +4,7 @@ namespace Flex\Random\Text;
 /**
  * Class Adjective
  *
+ * @package Flex\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
 class Adjective {

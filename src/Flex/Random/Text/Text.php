@@ -2,8 +2,9 @@
 namespace Flex\Random\Text;
 
 /**
- * Class RandomText
+ * Class Text
  *
+ * @package Flex\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
 class Text {
