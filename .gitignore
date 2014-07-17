@@ -2,7 +2,5 @@
 .svn
 /build
 /vendor
-build.properties
 build.properties.local
-build.xml
 composer.lock
