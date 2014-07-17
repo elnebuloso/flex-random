@@ -18,7 +18,7 @@ class Adjective {
      */
     public static function getAdjective($char = null, $lang = 'en') {
         if(is_null($char)) {
-            $char = Char::get();
+            $char = RandomChar::get();
         }
 
         $words = self::getAdjectives($char, $lang);

@@ -6,6 +6,7 @@ use Flex\Random\Text\Word;
 /**
  * Class WordTest
  *
+ * @package FlexTest\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
 class WordTest extends \PHPUnit_Framework_TestCase {

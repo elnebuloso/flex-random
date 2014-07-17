@@ -17,7 +17,7 @@ class Project {
      */
     public static function getProjectNameMale($char = null) {
         if(is_null($char)) {
-            $char = Char::get();
+            $char = RandomChar::get();
         }
 
         $adjective = Adjective::getAdjective($char);
@@ -38,7 +38,7 @@ class Project {
      */
     public static function getProjectNameFemale($char = null) {
         if(is_null($char)) {
-            $char = Char::get();
+            $char = RandomChar::get();
         }
 
         $adjective = Adjective::getAdjective($char);

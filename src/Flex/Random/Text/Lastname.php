@@ -48,7 +48,7 @@ class Lastname {
      */
     public static function getLastname($char = null, $lang = 'de') {
         if(is_null($char)) {
-            $char = Char::get();
+            $char = RandomChar::get();
         }
 
         $names = self::getLastnames($char, $lang);

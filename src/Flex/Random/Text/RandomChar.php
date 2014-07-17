@@ -2,12 +2,12 @@
 namespace Flex\Random\Text;
 
 /**
- * Class Char
+ * Class RandomChar
  *
  * @package Flex\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class Char {
+class RandomChar {
 
     /**
      * returns random char

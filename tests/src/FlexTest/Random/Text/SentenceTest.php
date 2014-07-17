@@ -6,6 +6,7 @@ use Flex\Random\Text\Sentence;
 /**
  * Class SentenceTest
  *
+ * @package FlexTest\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
 class SentenceTest extends \PHPUnit_Framework_TestCase {

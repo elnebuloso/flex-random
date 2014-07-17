@@ -104,7 +104,7 @@ class Firstname {
      */
     public static function getFirstname($gender = Constants::GENDER_MALE, $char = null) {
         if(is_null($char)) {
-            $char = Char::get();
+            $char = RandomChar::get();
         }
 
         $firstnames = self::getFirstnames($gender, $char);
