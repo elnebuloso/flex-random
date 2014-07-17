@@ -1,44 +1,44 @@
 <?php
 namespace FlexTest\Text;
 
-use Flex\Random\Text\Lastname;
+use Flex\Random\Text\RandomLastname;
 
 /**
- * Class LastnameTest
+ * Class RandomLastnameTest
  *
  * @package FlexTest\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class LastnameTest extends \PHPUnit_Framework_TestCase {
+class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @return void
      */
     public function test_getLastnameCollection_isArray() {
-        $this->assertInternalType('array', Lastname::getLastnameCollection());
+        $this->assertInternalType('array', RandomLastname::getLastnameCollection());
     }
 
     /**
      * @return void
      */
     public function test_getLastnameCollection_countAlphabeticalRange() {
-        $this->assertCount(26, Lastname::getLastnameCollection());
-        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(Lastname::getLastnameCollection())));
+        $this->assertCount(26, RandomLastname::getLastnameCollection());
+        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(RandomLastname::getLastnameCollection())));
     }
 
     /**
      * @return void
      */
     public function test_getLastnameCollection_isArrayForWrongLanguage() {
-        $this->assertInternalType('array', Lastname::getLastnameCollection('language'));
-        $this->assertEmpty(Lastname::getLastnameCollection('language'));
+        $this->assertInternalType('array', RandomLastname::getLastnameCollection('language'));
+        $this->assertEmpty(RandomLastname::getLastnameCollection('language'));
     }
 
     /**
      * @return void
      */
     public function test_getLastnames_default() {
-        $names = Lastname::getLastnames();
+        $names = RandomLastname::getLastnames();
 
         $this->assertInternalType('array', $names);
         $this->assertGreaterThan(0, count($names));
@@ -49,7 +49,7 @@ class LastnameTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getLastnames_forChar() {
-        $names = Lastname::getLastnames('b');
+        $names = RandomLastname::getLastnames('b');
 
         $this->assertInternalType('array', $names);
         $this->assertGreaterThan(0, count($names));
@@ -60,7 +60,7 @@ class LastnameTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getLastnames_forWrongChar() {
-        $names = Lastname::getLastnames('foo');
+        $names = RandomLastname::getLastnames('foo');
 
         $this->assertInternalType('array', $names);
         $this->assertEmpty($names);
@@ -70,7 +70,7 @@ class LastnameTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getLastname_default() {
-        $name = Lastname::getLastname();
+        $name = RandomLastname::getLastname();
 
         $this->assertInternalType('string', $name);
     }
@@ -79,7 +79,7 @@ class LastnameTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getLastname_forChar() {
-        $name = Lastname::getLastname('a');
+        $name = RandomLastname::getLastname('a');
         $char = strtolower($name[0]);
 
         $this->assertInternalType('string', $name);
@@ -90,7 +90,7 @@ class LastnameTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getLastname_forWrongChar() {
-        $name = Lastname::getLastname('foo');
+        $name = RandomLastname::getLastname('foo');
 
         $this->assertNull($name);
     }
