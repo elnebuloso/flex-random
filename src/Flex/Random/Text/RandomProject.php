@@ -2,12 +2,12 @@
 namespace Flex\Random\Text;
 
 /**
- * Class Project
+ * Class RandomProject
  *
  * @package Flex\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class Project {
+class RandomProject {
 
     /**
      * returns male project name
@@ -16,7 +16,7 @@ class Project {
      * @return string
      */
     public static function getProjectNameMale($char = null) {
-        if(is_null($char)) {
+        if(empty($char)) {
             $char = RandomChar::get();
         }
 
@@ -37,7 +37,7 @@ class Project {
      * @return string
      */
     public static function getProjectNameFemale($char = null) {
-        if(is_null($char)) {
+        if(empty($char)) {
             $char = RandomChar::get();
         }
 

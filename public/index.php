@@ -12,6 +12,7 @@ require_once 'vendor/autoload.php';
 
 use Flex\Random\Text\RandomAdjective;
 use Flex\Random\Text\RandomChar;
+use Flex\Random\Text\RandomProject;
 use Flex\Random\Text\RandomSentence;
 use Flex\Random\Text\RandomText;
 use Flex\Random\Text\RandomWord;
@@ -53,6 +54,14 @@ use Flex\Random\Text\RandomWord;
         <tr>
             <td>RandomAdjective::getAdjective()</td>
             <td><?php echo RandomAdjective::getAdjective(); ?></td>
+        </tr>
+        <tr>
+            <td>RandomProject::getProjectNameMale()</td>
+            <td><?php echo RandomProject::getProjectNameMale(); ?></td>
+        </tr>
+        <tr>
+            <td>RandomProject::getProjectNameFemale()</td>
+            <td><?php echo RandomProject::getProjectNameFemale(); ?></td>
         </tr>
         <tr>
             <td>RandomWord::get()</td>
