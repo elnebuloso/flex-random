@@ -4,12 +4,12 @@ namespace FlexTest\Random\Text;
 use Flex\Random\Text\RandomAdjective;
 
 /**
- * Class AdjectiveTest
+ * Class RandomAdjectiveTest
  *
  * @package FlexTest\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class AdjectiveTest extends \PHPUnit_Framework_TestCase {
+class RandomAdjectiveTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @return void

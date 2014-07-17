@@ -4,12 +4,12 @@ namespace FlexTest\Text;
 use Flex\Random\Text\RandomWord;
 
 /**
- * Class WordTest
+ * Class RandomWordTest
  *
  * @package Flex\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class WordTest extends \PHPUnit_Framework_TestCase {
+class RandomWordTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @return void

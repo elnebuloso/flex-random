@@ -10,8 +10,11 @@ chdir(dirname(__DIR__));
 // autoloading
 require_once 'vendor/autoload.php';
 
-use Flex\Random\Text\RandomChar;
 use Flex\Random\Text\RandomAdjective;
+use Flex\Random\Text\RandomChar;
+use Flex\Random\Text\RandomWord;
+use Flex\Random\Text\RandomSentence;
+use Flex\Random\Text\RandomText;
 ?>
 
 <!DOCTYPE html>
@@ -40,8 +43,33 @@ use Flex\Random\Text\RandomAdjective;
         <small>elnebuloso</small>
     </h1>
 
-    <h2>random char: <?php echo RandomChar::get(); ?></h2>
-    <h2>random adjective: <?php echo RandomAdjective::getAdjective(); ?></h2>
+    <h2>RandomChar::get()
+        <small> <?php echo RandomChar::get(); ?></small>
+    </h2>
+
+    <h2>RandomAdjective::getAdjective()
+        <small> <?php echo RandomAdjective::getAdjective(); ?></small>
+    </h2>
+
+    <h2>RandomWord::get()
+        <small> <?php echo RandomWord::get(); ?></small>
+    </h2>
+
+    <h2>RandomWord::consonant()
+        <small> <?php echo RandomWord::consonant(); ?></small>
+    </h2>
+
+    <h2>RandomWord::vowel()
+        <small> <?php echo RandomWord::vowel(); ?></small>
+    </h2>
+
+    <h2>RandomSentence::get()
+        <small> <?php echo RandomSentence::get(); ?></small>
+    </h2>
+
+    <h2>RandomText::get()
+        <small> <?php echo RandomText::get(); ?></small>
+    </h2>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
