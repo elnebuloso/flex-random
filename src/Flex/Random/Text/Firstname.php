@@ -12,6 +12,11 @@ use Flex\Random\Constants;
 class Firstname {
 
     /**
+     * @var array
+     */
+    private static $collection = array();
+
+    /**
      * returns male firstname collection
      *
      * @return array
@@ -76,10 +81,18 @@ class Firstname {
      * @return array
      */
     public static function getFirstnameCollection($gender = Constants::GENDER_MALE) {
-        $resources = realpath(dirname(__FILE__) . '/../../../../resources');
-        $include = "/firstnames-{$gender}.php";
+        // return previous fetched collection
+        if(array_key_exists($gender, self::$collection)) {
+            return self::$collection[$gender];
+        }
 
-        return include $resources . $include;
+        $resource = realpath(dirname(__FILE__) . '/../../../../resources');
+        $filename = $resource . "/firstnames-{$gender}.php";
+
+        // store fetched collection
+        self::$collection[$gender] = (file_exists($filename)) ? include $filename : array();
+
+        return self::$collection[$gender];
     }
 
     /**
@@ -90,6 +103,7 @@ class Firstname {
      * @return array
      */
     public static function getFirstnames($gender = Constants::GENDER_MALE, $char = 'a') {
+        $char = strtolower($char);
         $firstnames = self::getFirstnameCollection($gender);
 
         return array_key_exists($char, $firstnames) ? $firstnames[$char] : array();
@@ -103,7 +117,7 @@ class Firstname {
      * @return string
      */
     public static function getFirstname($gender = Constants::GENDER_MALE, $char = null) {
-        if(is_null($char)) {
+        if(empty($char)) {
             $char = RandomChar::get();
         }
 
