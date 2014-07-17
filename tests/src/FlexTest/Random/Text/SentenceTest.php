@@ -1,7 +1,7 @@
 <?php
 namespace FlexTest\Text;
 
-use Flex\Random\Text\Sentence;
+use Flex\Random\Text\RandomSentence;
 
 /**
  * Class SentenceTest
@@ -15,7 +15,7 @@ class SentenceTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_get() {
-        $sentence = Sentence::get(100);
+        $sentence = RandomSentence::get(100);
         $this->assertNotNull($sentence);
     }
 }

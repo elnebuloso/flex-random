@@ -10,6 +10,7 @@ chdir(dirname(__DIR__));
 // autoloading
 require_once 'vendor/autoload.php';
 
+use Flex\Random\Text\RandomChar;
 use Flex\Random\Text\RandomAdjective;
 ?>
 
@@ -39,6 +40,7 @@ use Flex\Random\Text\RandomAdjective;
         <small>elnebuloso</small>
     </h1>
 
+    <h2>random char: <?php echo RandomChar::get(); ?></h2>
     <h2>random adjective: <?php echo RandomAdjective::getAdjective(); ?></h2>
 </div>
 

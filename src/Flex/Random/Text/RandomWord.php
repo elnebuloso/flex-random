@@ -2,12 +2,12 @@
 namespace Flex\Random\Text;
 
 /**
- * Class Word
+ * Class RandomWord
  *
  * @package Flex\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class Word {
+class RandomWord {
 
     /**
      * @var string
@@ -22,14 +22,14 @@ class Word {
     /**
      * returns random speakable word beginning with consonant
      *
-     * @param int $chars
+     * @param int $length
      * @return string
      */
-    public static function speakableConsonant($chars = null) {
-        $chars = (empty($chars)) ? mt_rand(3, 8) : $chars;
-        $word = '';
+    public static function consonant($length = null) {
+        $length = empty($length) ? mt_rand(3, 8) : $length;
+        $word = null;
 
-        for($x = 0; $x < $chars; $x++) {
+        for($x = 0; $x < $length; $x++) {
             if($x % 2 == 0) {
                 $word .= self::$consonants[mt_rand(0, strlen(self::$consonants) - 1)];
             }
@@ -44,14 +44,14 @@ class Word {
     /**
      * returns random speakable word beginning with vowel
      *
-     * @param int $chars
+     * @param int $length
      * @return string
      */
-    public static function speakableVowel($chars = null) {
-        $chars = (empty($chars)) ? mt_rand(3, 8) : $chars;
-        $word = '';
+    public static function vowel($length = null) {
+        $length = empty($length) ? mt_rand(3, 8) : $length;
+        $word = null;
 
-        for($x = 0; $x < $chars; $x++) {
+        for($x = 0; $x < $length; $x++) {
             if($x % 2 == 0) {
                 $word .= self::$vowels[mt_rand(0, strlen(self::$vowels) - 1)];
             }
@@ -66,15 +66,15 @@ class Word {
     /**
      * return random word
      *
-     * @param int $chars
+     * @param int $length
      * @return string
      */
-    public static function get($chars = null) {
-        $chars = (empty($chars)) ? mt_rand(3, 8) : $chars;
+    public static function get($length = null) {
         $wordChars = str_shuffle(self::$consonants . self::$vowels);
-        $word = '';
+        $length = empty($length) ? mt_rand(3, 8) : $length;
+        $word = null;
 
-        for($x = 0; $x < $chars; $x++) {
+        for($x = 0; $x < $length; $x++) {
             $word .= $wordChars[mt_rand(0, strlen($wordChars) - 1)];
         }
 

@@ -2,31 +2,30 @@
 namespace Flex\Random\Text;
 
 /**
- * Class Sentence
+ * Class RandomSentence
  *
  * @package Flex\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class Sentence {
+class RandomSentence {
 
     /**
      * returns random sentence for given number of words
      *
-     * @param int $wordcount
+     * @param int $count
      * @return string
      */
-    public static function get($wordcount = null) {
-        // words per senctence
-        $wordcount = (empty($wordcount)) ? mt_rand(8, 25) : $wordcount;
+    public static function get($count = null) {
+        $count = empty($count) ? mt_rand(8, 25) : $count;
         $words = array();
 
-        for($a = 0; $a < $wordcount; $a++) {
+        for($a = 0; $a < $count; $a++) {
             // random word
             if(mt_rand(1, 100) % 2 === 0) {
-                $word = Word::speakableConsonant(mt_rand(3, 12));
+                $word = RandomWord::consonant(mt_rand(3, 12));
             }
             else {
-                $word = Word::speakableVowel(mt_rand(3, 12));
+                $word = RandomWord::vowel(mt_rand(3, 12));
             }
 
             // first word in sentence first letter uppercase
@@ -40,7 +39,7 @@ class Sentence {
             }
 
             // chance to add comma
-            if($a < ($wordcount - 2) && mt_rand(1, 100) <= 5) {
+            if($a < ($count - 2) && mt_rand(1, 100) <= 5) {
                 $word = $word . ', ';
             }
 
