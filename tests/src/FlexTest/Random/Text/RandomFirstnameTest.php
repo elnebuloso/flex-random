@@ -1,102 +1,102 @@
 <?php
 namespace FlexTest\Text;
 
-use Flex\Random\Text\Firstname;
+use Flex\Random\Text\RandomFirstname;
 
 /**
- * Class FirstnameTest
+ * Class RandomFirstnameTest
  *
  * @package FlexTest\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class FirstnameTest extends \PHPUnit_Framework_TestCase {
+class RandomFirstnameTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @return void
      */
     public function test_getFirstnameCollectionMale_isArray() {
-        $this->assertInternalType('array', Firstname::getFirstnameCollectionMale());
+        $this->assertInternalType('array', RandomFirstname::getFirstnameCollectionMale());
     }
 
     /**
      * @return void
      */
     public function test_getFirstnameCollectionMale_countAlphabeticalRange() {
-        $this->assertCount(26, Firstname::getFirstnameCollectionMale());
-        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(Firstname::getFirstnameCollectionMale())));
+        $this->assertCount(26, RandomFirstname::getFirstnameCollectionMale());
+        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(RandomFirstname::getFirstnameCollectionMale())));
     }
 
     /**
      * @return void
      */
     public function test_getFirstnameCollectionFemale_isArray() {
-        $this->assertInternalType('array', Firstname::getFirstnameCollectionFemale());
+        $this->assertInternalType('array', RandomFirstname::getFirstnameCollectionFemale());
     }
 
     /**
      * @return void
      */
     public function test_getFirstnameCollectionFemale_countAlphabeticalRange() {
-        $this->assertCount(26, Firstname::getFirstnameCollectionFemale());
-        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(Firstname::getFirstnameCollectionFemale())));
+        $this->assertCount(26, RandomFirstname::getFirstnameCollectionFemale());
+        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(RandomFirstname::getFirstnameCollectionFemale())));
     }
 
     /**
      * @return void
      */
     public function test_getFirstnamesMale_isArray() {
-        $this->assertInternalType('array', Firstname::getFirstnamesMale());
+        $this->assertInternalType('array', RandomFirstname::getFirstnamesMale());
     }
 
     /**
      * @return void
      */
     public function test_getFirstnamesMale_containsNames() {
-        $this->assertGreaterThan(0, count(Firstname::getFirstnamesMale()));
+        $this->assertGreaterThan(0, count(RandomFirstname::getFirstnamesMale()));
     }
 
     /**
      * @return void
      */
     public function test_getFirstnamesMale_forWrongCharIsEmptyArray() {
-        $this->assertInternalType('array', Firstname::getFirstnamesMale('foo'));
-        $this->assertEmpty(Firstname::getFirstnamesMale('foo'));
+        $this->assertInternalType('array', RandomFirstname::getFirstnamesMale('foo'));
+        $this->assertEmpty(RandomFirstname::getFirstnamesMale('foo'));
     }
 
     /**
      * @return void
      */
     public function test_getFirstnamesFemale_isArray() {
-        $this->assertInternalType('array', Firstname::getFirstnamesFemale());
+        $this->assertInternalType('array', RandomFirstname::getFirstnamesFemale());
     }
 
     /**
      * @return void
      */
     public function test_getFirstnamesFemale_containsNames() {
-        $this->assertGreaterThan(0, count(Firstname::getFirstnamesFemale()));
+        $this->assertGreaterThan(0, count(RandomFirstname::getFirstnamesFemale()));
     }
 
     /**
      * @return void
      */
     public function test_getFirstnamesFemale_forWrongCharIsEmptyArray() {
-        $this->assertInternalType('array', Firstname::getFirstnamesFemale('foo'));
-        $this->assertEmpty(Firstname::getFirstnamesFemale('foo'));
+        $this->assertInternalType('array', RandomFirstname::getFirstnamesFemale('foo'));
+        $this->assertEmpty(RandomFirstname::getFirstnamesFemale('foo'));
     }
 
     /**
      * @return void
      */
     public function test_getFirstnameMale_default() {
-        $this->assertInternalType('string', Firstname::getFirstnameMale());
+        $this->assertInternalType('string', RandomFirstname::getFirstnameMale());
     }
 
     /**
      * @return void
      */
     public function test_getFirstnameMale_forChar() {
-        $name = Firstname::getFirstnameMale('a');
+        $name = RandomFirstname::getFirstnameMale('a');
         $char = strtolower($name[0]);
 
         $this->assertInternalType('string', $name);
@@ -107,7 +107,7 @@ class FirstnameTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getFirstnameMale_forWrongChar() {
-        $name = Firstname::getFirstnameMale('foo');
+        $name = RandomFirstname::getFirstnameMale('foo');
 
         $this->assertNull($name);
     }
@@ -116,14 +116,14 @@ class FirstnameTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getFirstnameFemale_default() {
-        $this->assertInternalType('string', Firstname::getFirstnameFemale());
+        $this->assertInternalType('string', RandomFirstname::getFirstnameFemale());
     }
 
     /**
      * @return void
      */
     public function test_getFirstnameFemale_forChar() {
-        $name = Firstname::getFirstnameFemale('a');
+        $name = RandomFirstname::getFirstnameFemale('a');
         $char = strtolower($name[0]);
 
         $this->assertInternalType('string', $name);
@@ -134,7 +134,7 @@ class FirstnameTest extends \PHPUnit_Framework_TestCase {
      * @return void
      */
     public function test_getFirstnameFemale_forWrongChar() {
-        $name = Firstname::getFirstnameFemale('foo');
+        $name = RandomFirstname::getFirstnameFemale('foo');
 
         $this->assertNull($name);
     }

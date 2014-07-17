@@ -4,12 +4,12 @@ namespace Flex\Random\Text;
 use Flex\Random\Constants;
 
 /**
- * Class Firstname
+ * Class RandomFirstname
  *
  * @package Flex\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class Firstname {
+class RandomFirstname {
 
     /**
      * @var array
