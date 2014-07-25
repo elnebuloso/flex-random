@@ -1,0 +1,17 @@
+<?php return array(
+    0 => 'Ula',
+    1 => 'Ulla',
+    2 => 'Ulrica',
+    3 => 'Ulrika',
+    4 => 'Ulrikaumeko',
+    5 => 'Ulrike',
+    6 => 'Umeko',
+    7 => 'Una',
+    8 => 'Ursa',
+    9 => 'Ursala',
+    10 => 'Ursola',
+    11 => 'Ursula',
+    12 => 'Ursulina',
+    13 => 'Ursuline',
+    14 => 'Uta',
+);
