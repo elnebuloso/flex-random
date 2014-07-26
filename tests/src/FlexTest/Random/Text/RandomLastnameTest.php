@@ -14,29 +14,6 @@ class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @return void
      */
-    public function test_getLastnameCollection_isArray() {
-        $this->assertInternalType('array', RandomLastname::getLastnameCollection());
-    }
-
-    /**
-     * @return void
-     */
-    public function test_getLastnameCollection_countAlphabeticalRange() {
-        $this->assertCount(26, RandomLastname::getLastnameCollection());
-        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(RandomLastname::getLastnameCollection())));
-    }
-
-    /**
-     * @return void
-     */
-    public function test_getLastnameCollection_isArrayForWrongLanguage() {
-        $this->assertInternalType('array', RandomLastname::getLastnameCollection('language'));
-        $this->assertEmpty(RandomLastname::getLastnameCollection('language'));
-    }
-
-    /**
-     * @return void
-     */
     public function test_getLastnames_default() {
         $names = RandomLastname::getLastnames();
 

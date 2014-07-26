@@ -14,36 +14,6 @@ class RandomFirstnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @return void
      */
-    public function test_getFirstnameCollectionMale_isArray() {
-        $this->assertInternalType('array', RandomFirstname::getFirstnameCollectionMale());
-    }
-
-    /**
-     * @return void
-     */
-    public function test_getFirstnameCollectionMale_countAlphabeticalRange() {
-        $this->assertCount(26, RandomFirstname::getFirstnameCollectionMale());
-        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(RandomFirstname::getFirstnameCollectionMale())));
-    }
-
-    /**
-     * @return void
-     */
-    public function test_getFirstnameCollectionFemale_isArray() {
-        $this->assertInternalType('array', RandomFirstname::getFirstnameCollectionFemale());
-    }
-
-    /**
-     * @return void
-     */
-    public function test_getFirstnameCollectionFemale_countAlphabeticalRange() {
-        $this->assertCount(26, RandomFirstname::getFirstnameCollectionFemale());
-        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(RandomFirstname::getFirstnameCollectionFemale())));
-    }
-
-    /**
-     * @return void
-     */
     public function test_getFirstnamesMale_isArray() {
         $this->assertInternalType('array', RandomFirstname::getFirstnamesMale());
     }

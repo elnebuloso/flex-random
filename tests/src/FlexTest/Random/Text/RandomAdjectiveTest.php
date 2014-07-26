@@ -14,29 +14,6 @@ class RandomAdjectiveTest extends \PHPUnit_Framework_TestCase {
     /**
      * @return void
      */
-    public function test_getAdjectiveCollection_isArray() {
-        $this->assertInternalType('array', RandomAdjective::getAdjectiveCollection());
-    }
-
-    /**
-     * @return void
-     */
-    public function test_getAdjectiveCollection_countAlphabeticalRange() {
-        $this->assertCount(26, RandomAdjective::getAdjectiveCollection());
-        $this->assertEmpty(array_diff(range('a', 'z'), array_keys(RandomAdjective::getAdjectiveCollection())));
-    }
-
-    /**
-     * @return void
-     */
-    public function test_getAdjectiveCollection_isArrayForWrongLanguage() {
-        $this->assertInternalType('array', RandomAdjective::getAdjectiveCollection('language'));
-        $this->assertEmpty(RandomAdjective::getAdjectiveCollection('language'));
-    }
-
-    /**
-     * @return void
-     */
     public function test_getAdjectives_default() {
         $words = RandomAdjective::getAdjectives();
 
