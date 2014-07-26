@@ -1,0 +1,15 @@
+<?php return array(
+    0 => 'jaded',
+    1 => 'jagged',
+    2 => 'jazzy',
+    3 => 'jealous',
+    4 => 'jittery',
+    5 => 'jobless',
+    6 => 'jolly',
+    7 => 'joyous',
+    8 => 'judicious',
+    9 => 'juicy',
+    10 => 'jumbled',
+    11 => 'jumpy',
+    12 => 'juvenile',
+);
