@@ -3,6 +3,12 @@ flex-random
 
 multiple generators for random content
 
+----------
+
+Installation through composer: [visit me on packagist][1]
+
+----------
+
 ```php
 require_once 'vendor/autoload.php';
 
@@ -36,3 +42,5 @@ RandomWord::vowel();
 RandomSentence::get();
 RandomText::get();
 ```
+
+[1]: https://packagist.org/packages/elnebuloso/flex-random
