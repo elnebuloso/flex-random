@@ -17,99 +17,6 @@ class RandomFirstname {
     private static $collection = array();
 
     /**
-     * returns male firstname collection
-     *
-     * @return array
-     */
-    public static function getFirstnameCollectionMale() {
-        return self::getFirstnameCollection(Constants::GENDER_MALE);
-    }
-
-    /**
-     * returns female firstname collection
-     *
-     * @return array
-     */
-    public static function getFirstnameCollectionFemale() {
-        return self::getFirstnameCollection(Constants::GENDER_FEMALE);
-    }
-
-    /**
-     * returns male firstnames
-     *
-     * @param string $char
-     * @return array
-     */
-    public static function getFirstnamesMale($char = 'a') {
-        return self::getFirstnames(Constants::GENDER_MALE, $char);
-    }
-
-    /**
-     * returns female firstnames
-     *
-     * @param string $char
-     * @return array
-     */
-    public static function getFirstnamesFemale($char = 'a') {
-        return self::getFirstnames(Constants::GENDER_FEMALE, $char);
-    }
-
-    /**
-     * returns random male firstname
-     *
-     * @param string $char
-     * @return string
-     */
-    public static function getFirstnameMale($char = null) {
-        return self::getFirstname(Constants::GENDER_MALE, $char);
-    }
-
-    /**
-     * returns random female firstname
-     *
-     * @param string $char
-     * @return string
-     */
-    public static function getFirstnameFemale($char = null) {
-        return self::getFirstname(Constants::GENDER_FEMALE, $char);
-    }
-
-    /**
-     * returns firstname collection
-     *
-     * @param string $gender
-     * @return array
-     */
-    public static function getFirstnameCollection($gender = Constants::GENDER_MALE) {
-        // return previous fetched collection
-        if(array_key_exists($gender, self::$collection)) {
-            return self::$collection[$gender];
-        }
-
-        $resource = realpath(dirname(__FILE__) . '/../../../../resources');
-        $filename = $resource . "/firstnames-{$gender}.php";
-
-        // store fetched collection
-        self::$collection[$gender] = (file_exists($filename)) ? include $filename : array();
-
-        return self::$collection[$gender];
-    }
-
-    /**
-     * returns firstnames
-     *
-     * @param string $gender
-     * @param string $char
-     * @return array
-     */
-    public static function getFirstnames($gender = Constants::GENDER_MALE, $char = 'a') {
-        $char = strtolower($char);
-        $firstnames = self::getFirstnameCollection($gender);
-
-        return array_key_exists($char, $firstnames) ? $firstnames[$char] : array();
-    }
-
-    /**
      * returns random firstname
      *
      * @param string $gender
@@ -130,5 +37,70 @@ class RandomFirstname {
         shuffle($firstnames);
 
         return $firstnames[0];
+    }
+
+    /**
+     * returns random female firstname
+     *
+     * @param string $char
+     * @return string
+     */
+    public static function getFirstnameFemale($char = null) {
+        return self::getFirstname(Constants::GENDER_FEMALE, $char);
+    }
+
+    /**
+     * returns random male firstname
+     *
+     * @param string $char
+     * @return string
+     */
+    public static function getFirstnameMale($char = null) {
+        return self::getFirstname(Constants::GENDER_MALE, $char);
+    }
+
+    /**
+     * returns female firstnames
+     *
+     * @param string $char
+     * @return array
+     */
+    public static function getFirstnamesFemale($char = 'a') {
+        return self::getFirstnames(Constants::GENDER_FEMALE, $char);
+    }
+
+    /**
+     * returns male firstnames
+     *
+     * @param string $char
+     * @return array
+     */
+    public static function getFirstnamesMale($char = 'a') {
+        return self::getFirstnames(Constants::GENDER_MALE, $char);
+    }
+
+    /**
+     * returns firstnames
+     *
+     * @param string $gender
+     * @param string $char
+     * @return array
+     */
+    public static function getFirstnames($gender = Constants::GENDER_MALE, $char = 'a') {
+        $char = strtolower($char);
+        $gender = strtolower($gender);
+
+        // return previous fetched collection
+        if(array_key_exists($char, self::$collection) && array_key_exists($gender, self::$collection[$char])) {
+            return self::$collection[$char][$gender];
+        }
+
+        $resource = realpath(dirname(__FILE__) . '/../../../../resources/firstnames/' . $gender);
+        $filename = $resource . "/firstnames-{$gender}-{$char}.php";
+
+        // store fetched collection
+        self::$collection[$char][$gender] = (file_exists($filename)) ? include $filename : array();
+
+        return self::$collection[$char][$gender];
     }
 }

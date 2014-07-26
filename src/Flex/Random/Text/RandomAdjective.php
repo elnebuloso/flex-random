@@ -46,31 +46,19 @@ class RandomAdjective {
      */
     public static function getAdjectives($char = 'a', $lang = 'en') {
         $char = strtolower($char);
-        $words = self::getAdjectiveCollection($lang);
-
-        return array_key_exists($char, $words) ? $words[$char] : array();
-    }
-
-    /**
-     * returns all adjectives for given language
-     *
-     * @param string $lang
-     * @return array
-     */
-    public static function getAdjectiveCollection($lang = 'en') {
         $lang = strtolower($lang);
 
         // return previous fetched collection
-        if(array_key_exists($lang, self::$collection)) {
-            return self::$collection[$lang];
+        if(array_key_exists($char, self::$collection) && array_key_exists($lang, self::$collection[$char])) {
+            return self::$collection[$char][$lang];
         }
 
-        $resource = realpath(dirname(__FILE__) . '/../../../../resources');
-        $filename = $resource . "/{$lang}/adjectives.php";
+        $resource = realpath(dirname(__FILE__) . '/../../../../resources/adjectives/' . $lang);
+        $filename = $resource . "/adjectives-{$lang}-{$char}.php";
 
         // store fetched collection
-        self::$collection[$lang] = (file_exists($filename)) ? include $filename : array();
+        self::$collection[$char][$lang] = (file_exists($filename)) ? include $filename : array();
 
-        return self::$collection[$lang];
+        return self::$collection[$char][$lang];
     }
 }

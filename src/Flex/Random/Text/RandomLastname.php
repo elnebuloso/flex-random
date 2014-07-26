@@ -18,15 +18,14 @@ class RandomLastname {
      * returns random lastname
      *
      * @param string $char
-     * @param string $lang
      * @return string
      */
-    public static function getLastname($char = null, $lang = 'de') {
+    public static function getLastname($char = null) {
         if(is_null($char)) {
             $char = RandomChar::get();
         }
 
-        $names = self::getLastnames($char, $lang);
+        $names = self::getLastnames($char);
 
         if(empty($names)) {
             return null;
@@ -40,37 +39,23 @@ class RandomLastname {
     /**
      * returns lastnames
      *
-     * @param string $lang
      * @param string $char
      * @return array
      */
-    public static function getLastnames($char = 'a', $lang = 'de') {
+    public static function getLastnames($char = 'a') {
         $char = strtolower($char);
-        $names = self::getLastnameCollection($lang);
-
-        return array_key_exists($char, $names) ? $names[$char] : array();
-    }
-
-    /**
-     * returns lastname collection
-     *
-     * @param string $lang
-     * @return array
-     */
-    public static function getLastnameCollection($lang = 'de') {
-        $lang = strtolower($lang);
 
         // return previous fetched collection
-        if(array_key_exists($lang, self::$collection)) {
-            return self::$collection[$lang];
+        if(array_key_exists($char, self::$collection)) {
+            return self::$collection[$char];
         }
 
-        $resource = realpath(dirname(__FILE__) . '/../../../../resources');
-        $filename = $resource . "/{$lang}/lastnames.php";
+        $resource = realpath(dirname(__FILE__) . '/../../../../resources/lastnames');
+        $filename = $resource . "/lastnames-{$char}.php";
 
         // store fetched collection
-        self::$collection[$lang] = (file_exists($filename)) ? include $filename : array();
+        self::$collection[$char] = (file_exists($filename)) ? include $filename : array();
 
-        return self::$collection[$lang];
+        return self::$collection[$char];
     }
 }

@@ -14,11 +14,11 @@ use Flex\Random\Text\RandomAdjective;
 use Flex\Random\Text\RandomChar;
 use Flex\Random\Text\RandomFirstname;
 use Flex\Random\Text\RandomLastname;
+use Flex\Random\Text\RandomFullname;
 use Flex\Random\Text\RandomProject;
 use Flex\Random\Text\RandomSentence;
 use Flex\Random\Text\RandomText;
 use Flex\Random\Text\RandomWord;
-
 ?>
 
 <!DOCTYPE html>
@@ -62,8 +62,16 @@ use Flex\Random\Text\RandomWord;
             <td><?php echo RandomFirstname::getFirstnameFemale(); ?></td>
         </tr>
         <tr>
-            <td>RandomAdjective::getLastname()</td>
+            <td>RandomLastname::getLastname()</td>
             <td><?php echo RandomLastname::getLastname(); ?></td>
+        </tr>
+        <tr>
+            <td>RandomFullname::getFullnameMale()</td>
+            <td><?php echo RandomFullname::getFullnameMale(); ?></td>
+        </tr>
+        <tr>
+            <td>RandomFullname::getFullnameFemale()</td>
+            <td><?php echo RandomFullname::getFullnameFemale(); ?></td>
         </tr>
         <tr>
             <td>RandomAdjective::getAdjective()</td>
