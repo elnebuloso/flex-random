@@ -12,9 +12,9 @@ use Flex\Random\Text\RandomSentence;
 class RandomSentenceTest extends \PHPUnit_Framework_TestCase {
 
     /**
-     * @return void
+     * @test
      */
-    public function test_get() {
+    public function get() {
         $sentence = RandomSentence::get(100);
         $this->assertNotNull($sentence);
     }

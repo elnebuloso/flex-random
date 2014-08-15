@@ -12,16 +12,16 @@ use Flex\Random\Text\RandomFullname;
 class RandomFullnameTest extends \PHPUnit_Framework_TestCase {
 
     /**
-     * @return void
+     * @test
      */
-    public function test_getRandomFullnameMale() {
+    public function getRandomFullnameMale() {
         $this->assertInternalType('string', RandomFullname::getFullnameMale());
     }
 
     /**
-     * @return void
+     * @test
      */
-    public function test_getRandomFullnameFemale() {
+    public function getRandomFullnameFemale() {
         $this->assertInternalType('string', RandomFullname::getFullnameFemale());
     }
 }

@@ -12,9 +12,9 @@ use Flex\Random\Text\RandomChar;
 class RandomCharTest extends \PHPUnit_Framework_TestCase {
 
     /**
-     * @return void
+     * @test
      */
-    public function test_get() {
+    public function get() {
         $char = RandomChar::get();
         $this->assertTrue(in_array($char, range('a', 'z')));
     }

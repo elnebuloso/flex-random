@@ -12,9 +12,9 @@ use Flex\Random\Text\RandomText;
 class RandomTextTest extends \PHPUnit_Framework_TestCase {
 
     /**
-     * @return void
+     * @test
      */
-    public function test_get() {
+    public function get() {
         $text = RandomText::get(100);
         $this->assertNotNull($text);
     }

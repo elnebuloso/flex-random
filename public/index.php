@@ -13,12 +13,13 @@ require_once 'vendor/autoload.php';
 use Flex\Random\Text\RandomAdjective;
 use Flex\Random\Text\RandomChar;
 use Flex\Random\Text\RandomFirstname;
-use Flex\Random\Text\RandomLastname;
 use Flex\Random\Text\RandomFullname;
+use Flex\Random\Text\RandomLastname;
 use Flex\Random\Text\RandomProject;
 use Flex\Random\Text\RandomSentence;
 use Flex\Random\Text\RandomText;
 use Flex\Random\Text\RandomWord;
+
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ use Flex\Random\Text\RandomWord;
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>elnebuloso/flex-random</title>
+    <title>flex-random / elnebuloso</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">

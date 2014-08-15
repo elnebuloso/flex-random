@@ -12,9 +12,9 @@ use Flex\Random\Text\RandomLastname;
 class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
 
     /**
-     * @return void
+     * @test
      */
-    public function test_getLastnames_default() {
+    public function getLastnames_default() {
         $names = RandomLastname::getLastnames();
 
         $this->assertInternalType('array', $names);
@@ -23,9 +23,9 @@ class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @return void
+     * @test
      */
-    public function test_getLastnames_forChar() {
+    public function getLastnames_forChar() {
         $names = RandomLastname::getLastnames('b');
 
         $this->assertInternalType('array', $names);
@@ -34,9 +34,9 @@ class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @return void
+     * @test
      */
-    public function test_getLastnames_forWrongChar() {
+    public function getLastnames_forWrongChar() {
         $names = RandomLastname::getLastnames('foo');
 
         $this->assertInternalType('array', $names);
@@ -44,18 +44,18 @@ class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @return void
+     * @test
      */
-    public function test_getLastname_default() {
+    public function getLastname_default() {
         $name = RandomLastname::getLastname();
 
         $this->assertInternalType('string', $name);
     }
 
     /**
-     * @return void
+     * @test
      */
-    public function test_getLastname_forChar() {
+    public function getLastname_forChar() {
         $name = RandomLastname::getLastname('a');
         $char = strtolower($name[0]);
 
@@ -64,9 +64,9 @@ class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @return void
+     * @test
      */
-    public function test_getLastname_forWrongChar() {
+    public function getLastname_forWrongChar() {
         $name = RandomLastname::getLastname('foo');
 
         $this->assertNull($name);
