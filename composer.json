@@ -1,5 +1,4 @@
 {
-    "version": "2.0.5",
     "name": "elnebuloso\/flex-random",
     "type": "library",
     "license": "MIT",
@@ -16,6 +15,9 @@
     ],
     "require": {
         "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "satooshi\/php-coveralls": "dev-master"
     },
     "autoload": {
         "psr-0": {
