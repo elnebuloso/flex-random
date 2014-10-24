@@ -4,7 +4,6 @@ namespace Flex\Random\Text;
 /**
  * Class RandomProject
  *
- * @package Flex\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
 class RandomProject {

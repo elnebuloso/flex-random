@@ -6,7 +6,6 @@ use Flex\Random\Constants;
 /**
  * Class RandomFirstname
  *
- * @package Flex\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
 class RandomFirstname {
