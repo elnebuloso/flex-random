@@ -13,7 +13,7 @@ class RandomWordTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function speakableConsonant() {
+    public function test_speakableConsonant() {
         $word = RandomWord::consonant();
         $this->assertGreaterThanOrEqual(3, strlen($word));
         $this->assertLessThanOrEqual(8, strlen($word));
@@ -22,7 +22,7 @@ class RandomWordTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function speakableVowel() {
+    public function test_speakableVowel() {
         $word = RandomWord::vowel();
         $this->assertGreaterThanOrEqual(3, strlen($word));
         $this->assertLessThanOrEqual(8, strlen($word));
@@ -31,7 +31,7 @@ class RandomWordTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function get() {
+    public function test_get() {
         $word = RandomWord::get();
         $this->assertGreaterThanOrEqual(3, strlen($word));
         $this->assertLessThanOrEqual(8, strlen($word));

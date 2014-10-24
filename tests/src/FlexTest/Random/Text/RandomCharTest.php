@@ -13,7 +13,7 @@ class RandomCharTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function get() {
+    public function test_get() {
         $char = RandomChar::get();
         $this->assertTrue(in_array($char, range('a', 'z')));
     }

@@ -13,7 +13,7 @@ class RandomSentenceTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function get() {
+    public function test_get() {
         $sentence = RandomSentence::get(100);
         $this->assertNotNull($sentence);
     }

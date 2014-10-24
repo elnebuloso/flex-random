@@ -13,14 +13,14 @@ class RandomFullnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function getRandomFullnameMale() {
+    public function test_getRandomFullnameMale() {
         $this->assertInternalType('string', RandomFullname::getFullnameMale());
     }
 
     /**
      * @test
      */
-    public function getRandomFullnameFemale() {
+    public function test_getRandomFullnameFemale() {
         $this->assertInternalType('string', RandomFullname::getFullnameFemale());
     }
 }

@@ -13,7 +13,7 @@ class RandomAdjectiveTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function getAdjectives_default() {
+    public function test_getAdjectives_default() {
         $words = RandomAdjective::getAdjectives();
 
         $this->assertInternalType('array', $words);
@@ -24,7 +24,7 @@ class RandomAdjectiveTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function getAdjectives_forChar() {
+    public function test_getAdjectives_forChar() {
         $words = RandomAdjective::getAdjectives('b');
 
         $this->assertInternalType('array', $words);
@@ -35,7 +35,7 @@ class RandomAdjectiveTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function getAdjectives_forWrongChar() {
+    public function test_getAdjectives_forWrongChar() {
         $words = RandomAdjective::getAdjectives('foo');
 
         $this->assertInternalType('array', $words);
@@ -45,7 +45,7 @@ class RandomAdjectiveTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function getRandomAdjective_default() {
+    public function test_getRandomAdjective_default() {
         $word = RandomAdjective::getAdjective();
 
         $this->assertInternalType('string', $word);
@@ -54,7 +54,7 @@ class RandomAdjectiveTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function getRandomAdjective_forChar() {
+    public function test_getRandomAdjective_forChar() {
         $word = RandomAdjective::getAdjective('a');
         $char = strtolower($word[0]);
 
@@ -65,7 +65,7 @@ class RandomAdjectiveTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function getRandomAdjective_forWrongChar() {
+    public function test_getRandomAdjective_forWrongChar() {
         $word = RandomAdjective::getAdjective('foo');
 
         $this->assertNull($word);
