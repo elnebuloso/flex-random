@@ -6,7 +6,6 @@ use Flex\Random\Text\RandomAdjective;
 /**
  * Class RandomAdjectiveTest
  *
- * @package FlexTest\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
 class RandomAdjectiveTest extends \PHPUnit_Framework_TestCase {

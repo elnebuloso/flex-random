@@ -6,7 +6,6 @@ use Flex\Random\Text\RandomLastname;
 /**
  * Class RandomLastnameTest
  *
- * @package FlexTest\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
 class RandomLastnameTest extends \PHPUnit_Framework_TestCase {

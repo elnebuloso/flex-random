@@ -6,7 +6,6 @@ use Flex\Random\Text\RandomProject;
 /**
  * Class RandomProjectTest
  *
- * @package FlexTest\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
 class RandomProjectTest extends \PHPUnit_Framework_TestCase {

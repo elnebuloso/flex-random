@@ -6,7 +6,6 @@ use Flex\Random\Text\RandomText;
 /**
  * Class RandomTextTest
  *
- * @package Flex\Random\Text
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
 class RandomTextTest extends \PHPUnit_Framework_TestCase {
