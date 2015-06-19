@@ -1,7 +1,6 @@
 # flex-random
 
-[![Software License](https://img.shields.io/packagist/l/elnebuloso/flex-random.svg?style=flat-square)](LICENSE)
-[![Build Status](https://img.shields.io/travis/elnebuloso/flex-random/master.svg?style=flat-square)](https://travis-ci.org/elnebuloso/flex-random)
+[![Build Status](https://travis-ci.org/elnebuloso/flex-random.svg?branch=master)](https://travis-ci.org/elnebuloso/flex-random)
 
 ## Requirements
 
