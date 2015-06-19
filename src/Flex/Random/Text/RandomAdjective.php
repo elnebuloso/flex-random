@@ -6,7 +6,8 @@ namespace Flex\Random\Text;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomAdjective {
+class RandomAdjective
+{
 
     /**
      * @var array
@@ -20,14 +21,15 @@ class RandomAdjective {
      * @param string $lang
      * @return string
      */
-    public static function getAdjective($char = null, $lang = 'en') {
-        if(empty($char)) {
+    public static function getAdjective($char = null, $lang = 'en')
+    {
+        if (empty($char)) {
             $char = RandomChar::get();
         }
 
         $words = self::getAdjectives($char, $lang);
 
-        if(empty($words)) {
+        if (empty($words)) {
             return null;
         }
 
@@ -43,12 +45,13 @@ class RandomAdjective {
      * @param string $lang
      * @return array
      */
-    public static function getAdjectives($char = 'a', $lang = 'en') {
+    public static function getAdjectives($char = 'a', $lang = 'en')
+    {
         $char = strtolower($char);
         $lang = strtolower($lang);
 
         // return previous fetched collection
-        if(array_key_exists($char, self::$collection) && array_key_exists($lang, self::$collection[$char])) {
+        if (array_key_exists($char, self::$collection) && array_key_exists($lang, self::$collection[$char])) {
             return self::$collection[$char][$lang];
         }
 

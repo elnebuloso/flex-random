@@ -6,14 +6,16 @@ namespace Flex\Random\Text;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomChar {
+class RandomChar
+{
 
     /**
      * returns random char
      *
      * @return string
      */
-    public static function get() {
+    public static function get()
+    {
         $chars = range('a', 'z');
         shuffle($chars);
 

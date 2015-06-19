@@ -8,7 +8,8 @@ use Flex\Random\Constants;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomFirstname {
+class RandomFirstname
+{
 
     /**
      * @var array
@@ -22,14 +23,15 @@ class RandomFirstname {
      * @param string $char
      * @return string
      */
-    public static function getFirstname($gender = Constants::GENDER_MALE, $char = null) {
-        if(empty($char)) {
+    public static function getFirstname($gender = Constants::GENDER_MALE, $char = null)
+    {
+        if (empty($char)) {
             $char = RandomChar::get();
         }
 
         $firstnames = self::getFirstnames($gender, $char);
 
-        if(empty($firstnames)) {
+        if (empty($firstnames)) {
             return null;
         }
 
@@ -44,7 +46,8 @@ class RandomFirstname {
      * @param string $char
      * @return string
      */
-    public static function getFirstnameFemale($char = null) {
+    public static function getFirstnameFemale($char = null)
+    {
         return self::getFirstname(Constants::GENDER_FEMALE, $char);
     }
 
@@ -54,7 +57,8 @@ class RandomFirstname {
      * @param string $char
      * @return string
      */
-    public static function getFirstnameMale($char = null) {
+    public static function getFirstnameMale($char = null)
+    {
         return self::getFirstname(Constants::GENDER_MALE, $char);
     }
 
@@ -64,7 +68,8 @@ class RandomFirstname {
      * @param string $char
      * @return array
      */
-    public static function getFirstnamesFemale($char = 'a') {
+    public static function getFirstnamesFemale($char = 'a')
+    {
         return self::getFirstnames(Constants::GENDER_FEMALE, $char);
     }
 
@@ -74,7 +79,8 @@ class RandomFirstname {
      * @param string $char
      * @return array
      */
-    public static function getFirstnamesMale($char = 'a') {
+    public static function getFirstnamesMale($char = 'a')
+    {
         return self::getFirstnames(Constants::GENDER_MALE, $char);
     }
 
@@ -85,12 +91,13 @@ class RandomFirstname {
      * @param string $char
      * @return array
      */
-    public static function getFirstnames($gender = Constants::GENDER_MALE, $char = 'a') {
+    public static function getFirstnames($gender = Constants::GENDER_MALE, $char = 'a')
+    {
         $char = strtolower($char);
         $gender = strtolower($gender);
 
         // return previous fetched collection
-        if(array_key_exists($char, self::$collection) && array_key_exists($gender, self::$collection[$char])) {
+        if (array_key_exists($char, self::$collection) && array_key_exists($gender, self::$collection[$char])) {
             return self::$collection[$char][$gender];
         }
 

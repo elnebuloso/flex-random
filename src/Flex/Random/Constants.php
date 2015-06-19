@@ -6,7 +6,8 @@ namespace Flex\Random;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-interface Constants {
+interface Constants
+{
 
     /**
      * @var string

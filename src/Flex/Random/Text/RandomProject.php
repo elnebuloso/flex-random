@@ -6,7 +6,8 @@ namespace Flex\Random\Text;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomProject {
+class RandomProject
+{
 
     /**
      * returns male project name
@@ -14,15 +15,16 @@ class RandomProject {
      * @param string $char
      * @return string
      */
-    public static function getProjectNameMale($char = null) {
-        if(empty($char)) {
+    public static function getProjectNameMale($char = null)
+    {
+        if (empty($char)) {
             $char = RandomChar::get();
         }
 
         $adjective = RandomAdjective::getAdjective($char);
         $name = RandomFirstname::getFirstnameMale($char);
 
-        if(empty($adjective) || empty($name)) {
+        if (empty($adjective) || empty($name)) {
             return null;
         }
 
@@ -35,15 +37,16 @@ class RandomProject {
      * @param string $char
      * @return string
      */
-    public static function getProjectNameFemale($char = null) {
-        if(empty($char)) {
+    public static function getProjectNameFemale($char = null)
+    {
+        if (empty($char)) {
             $char = RandomChar::get();
         }
 
         $adjective = RandomAdjective::getAdjective($char);
         $name = RandomFirstname::getFirstnameFemale($char);
 
-        if(empty($adjective) || empty($name)) {
+        if (empty($adjective) || empty($name)) {
             return null;
         }
 

@@ -6,7 +6,8 @@ namespace Flex\Random\Text;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomWord {
+class RandomWord
+{
 
     /**
      * @var string
@@ -24,15 +25,15 @@ class RandomWord {
      * @param int $length
      * @return string
      */
-    public static function consonant($length = null) {
+    public static function consonant($length = null)
+    {
         $length = empty($length) ? mt_rand(3, 8) : $length;
         $word = null;
 
-        for($x = 0; $x < $length; $x++) {
-            if($x % 2 == 0) {
+        for ($x = 0; $x < $length; $x++) {
+            if ($x % 2 == 0) {
                 $word .= self::$consonants[mt_rand(0, strlen(self::$consonants) - 1)];
-            }
-            else {
+            } else {
                 $word .= self::$vowels[mt_rand(0, strlen(self::$vowels) - 1)];
             }
         }
@@ -46,15 +47,15 @@ class RandomWord {
      * @param int $length
      * @return string
      */
-    public static function vowel($length = null) {
+    public static function vowel($length = null)
+    {
         $length = empty($length) ? mt_rand(3, 8) : $length;
         $word = null;
 
-        for($x = 0; $x < $length; $x++) {
-            if($x % 2 == 0) {
+        for ($x = 0; $x < $length; $x++) {
+            if ($x % 2 == 0) {
                 $word .= self::$vowels[mt_rand(0, strlen(self::$vowels) - 1)];
-            }
-            else {
+            } else {
                 $word .= self::$consonants[mt_rand(0, strlen(self::$consonants) - 1)];
             }
         }
@@ -68,12 +69,13 @@ class RandomWord {
      * @param int $length
      * @return string
      */
-    public static function get($length = null) {
+    public static function get($length = null)
+    {
         $wordChars = str_shuffle(self::$consonants . self::$vowels);
         $length = empty($length) ? mt_rand(3, 8) : $length;
         $word = null;
 
-        for($x = 0; $x < $length; $x++) {
+        for ($x = 0; $x < $length; $x++) {
             $word .= $wordChars[mt_rand(0, strlen($wordChars) - 1)];
         }
 

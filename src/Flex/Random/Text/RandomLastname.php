@@ -6,7 +6,8 @@ namespace Flex\Random\Text;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomLastname {
+class RandomLastname
+{
 
     /**
      * @var array
@@ -19,14 +20,15 @@ class RandomLastname {
      * @param string $char
      * @return string
      */
-    public static function getLastname($char = null) {
-        if(is_null($char)) {
+    public static function getLastname($char = null)
+    {
+        if (is_null($char)) {
             $char = RandomChar::get();
         }
 
         $names = self::getLastnames($char);
 
-        if(empty($names)) {
+        if (empty($names)) {
             return null;
         }
 
@@ -41,11 +43,12 @@ class RandomLastname {
      * @param string $char
      * @return array
      */
-    public static function getLastnames($char = 'a') {
+    public static function getLastnames($char = 'a')
+    {
         $char = strtolower($char);
 
         // return previous fetched collection
-        if(array_key_exists($char, self::$collection)) {
+        if (array_key_exists($char, self::$collection)) {
             return self::$collection[$char];
         }
 
