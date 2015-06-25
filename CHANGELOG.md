@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 2.0.12
+## 2.0.12, 2.0.13
 
 - PSR1, PSR2 Coding Standard
 

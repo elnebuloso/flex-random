@@ -8,12 +8,14 @@ use Flex\Random\Text\RandomLastname;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
+class RandomLastnameTest extends \PHPUnit_Framework_TestCase
+{
 
     /**
      * @test
      */
-    public function test_getLastnames_default() {
+    public function testGetLastnamesDefault()
+    {
         $names = RandomLastname::getLastnames();
 
         $this->assertInternalType('array', $names);
@@ -24,7 +26,8 @@ class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function test_getLastnames_forChar() {
+    public function testGetLastnamesForChar()
+    {
         $names = RandomLastname::getLastnames('b');
 
         $this->assertInternalType('array', $names);
@@ -35,7 +38,8 @@ class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function test_getLastnames_forWrongChar() {
+    public function testGetLastnamesForWrongChar()
+    {
         $names = RandomLastname::getLastnames('foo');
 
         $this->assertInternalType('array', $names);
@@ -45,7 +49,8 @@ class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function test_getLastname_default() {
+    public function testGetLastnameDefault()
+    {
         $name = RandomLastname::getLastname();
 
         $this->assertInternalType('string', $name);
@@ -54,7 +59,8 @@ class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function test_getLastname_forChar() {
+    public function testGetLastnameForChar()
+    {
         $name = RandomLastname::getLastname('a');
         $char = strtolower($name[0]);
 
@@ -65,7 +71,8 @@ class RandomLastnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function test_getLastname_forWrongChar() {
+    public function testGetLastnameForWrongChar()
+    {
         $name = RandomLastname::getLastname('foo');
 
         $this->assertNull($name);

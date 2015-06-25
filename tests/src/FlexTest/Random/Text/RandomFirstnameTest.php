@@ -8,26 +8,30 @@ use Flex\Random\Text\RandomFirstname;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomFirstnameTest extends \PHPUnit_Framework_TestCase {
+class RandomFirstnameTest extends \PHPUnit_Framework_TestCase
+{
 
     /**
      * @test
      */
-    public function test_getFirstnamesMale_isArray() {
+    public function testGetFirstnamesMaleIsArray()
+    {
         $this->assertInternalType('array', RandomFirstname::getFirstnamesMale());
     }
 
     /**
      * @test
      */
-    public function test_getFirstnamesMale_containsNames() {
+    public function testGetFirstnamesMaleContainsNames()
+    {
         $this->assertGreaterThan(0, count(RandomFirstname::getFirstnamesMale()));
     }
 
     /**
      * @test
      */
-    public function test_getFirstnamesMale_forWrongCharIsEmptyArray() {
+    public function testGetFirstnamesMaleForWrongCharIsEmptyArray()
+    {
         $this->assertInternalType('array', RandomFirstname::getFirstnamesMale('foo'));
         $this->assertEmpty(RandomFirstname::getFirstnamesMale('foo'));
     }
@@ -35,21 +39,24 @@ class RandomFirstnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function test_getFirstnamesFemale_isArray() {
+    public function testGetFirstnamesFemaleIsArray()
+    {
         $this->assertInternalType('array', RandomFirstname::getFirstnamesFemale());
     }
 
     /**
      * @test
      */
-    public function test_getFirstnamesFemale_containsNames() {
+    public function testGetFirstnamesFemaleContainsNames()
+    {
         $this->assertGreaterThan(0, count(RandomFirstname::getFirstnamesFemale()));
     }
 
     /**
      * @test
      */
-    public function test_getFirstnamesFemale_forWrongCharIsEmptyArray() {
+    public function testGetFirstnamesFemaleForWrongCharIsEmptyArray()
+    {
         $this->assertInternalType('array', RandomFirstname::getFirstnamesFemale('foo'));
         $this->assertEmpty(RandomFirstname::getFirstnamesFemale('foo'));
     }
@@ -57,14 +64,16 @@ class RandomFirstnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function test_getFirstnameMale_default() {
+    public function testGetFirstnameMaleDefault()
+    {
         $this->assertInternalType('string', RandomFirstname::getFirstnameMale());
     }
 
     /**
      * @test
      */
-    public function test_getFirstnameMale_forChar() {
+    public function testGetFirstnameMaleForChar()
+    {
         $name = RandomFirstname::getFirstnameMale('a');
         $char = strtolower($name[0]);
 
@@ -75,23 +84,25 @@ class RandomFirstnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function test_getFirstnameMale_forWrongChar() {
+    public function testGetFirstnameMaleForWrongChar()
+    {
         $name = RandomFirstname::getFirstnameMale('foo');
-
         $this->assertNull($name);
     }
 
     /**
      * @test
      */
-    public function test_getFirstnameFemale_default() {
+    public function testGetFirstnameFemaleDefault()
+    {
         $this->assertInternalType('string', RandomFirstname::getFirstnameFemale());
     }
 
     /**
      * @test
      */
-    public function test_getFirstnameFemale_forChar() {
+    public function testGetFirstnameFemaleForChar()
+    {
         $name = RandomFirstname::getFirstnameFemale('a');
         $char = strtolower($name[0]);
 
@@ -102,9 +113,9 @@ class RandomFirstnameTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function test_getFirstnameFemale_forWrongChar() {
+    public function testGetFirstnameFemaleForWrongChar()
+    {
         $name = RandomFirstname::getFirstnameFemale('foo');
-
         $this->assertNull($name);
     }
 }

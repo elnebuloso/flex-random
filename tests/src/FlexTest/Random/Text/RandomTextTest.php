@@ -8,12 +8,14 @@ use Flex\Random\Text\RandomText;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomTextTest extends \PHPUnit_Framework_TestCase {
+class RandomTextTest extends \PHPUnit_Framework_TestCase
+{
 
     /**
      * @test
      */
-    public function test_get() {
+    public function testGet()
+    {
         $text = RandomText::get(100);
         $this->assertNotNull($text);
     }

@@ -8,12 +8,14 @@ use Flex\Random\Text\RandomChar;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomCharTest extends \PHPUnit_Framework_TestCase {
+class RandomCharTest extends \PHPUnit_Framework_TestCase
+{
 
     /**
      * @test
      */
-    public function test_get() {
+    public function testGet()
+    {
         $char = RandomChar::get();
         $this->assertTrue(in_array($char, range('a', 'z')));
     }

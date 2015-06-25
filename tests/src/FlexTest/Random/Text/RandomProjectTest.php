@@ -8,30 +8,32 @@ use Flex\Random\Text\RandomProject;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomProjectTest extends \PHPUnit_Framework_TestCase {
+class RandomProjectTest extends \PHPUnit_Framework_TestCase
+{
 
     /**
      * @test
      */
-    public function test_getRandomProjectNameMale() {
+    public function testGetRandomProjectNameMale()
+    {
         $this->assertInternalType('string', RandomProject::getProjectNameMale());
     }
 
     /**
      * @test
      */
-    public function test_getRandomProjectNameMale_default() {
+    public function testGetRandomProjectNameMaleDefault()
+    {
         $name = RandomProject::getProjectNameMale();
-
         $this->assertInternalType('string', $name);
     }
 
     /**
      * @test
      */
-    public function test_getRandomProjectNameMale_forChar() {
+    public function testGetRandomProjectNameMaleForChar()
+    {
         $name = RandomProject::getProjectNameMale('b');
-
         $this->assertInternalType('string', $name);
         $this->assertEquals('b', strtolower($name[0]));
     }
@@ -39,34 +41,35 @@ class RandomProjectTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function test_getRandomProjectNameMale_forWrongChar() {
+    public function testGetRandomProjectNameMaleForWrongChar()
+    {
         $name = RandomProject::getProjectNameMale('foo');
-
         $this->assertNull($name);
     }
 
     /**
      * @test
      */
-    public function test_getRandomProjectNameFemale() {
+    public function testGetRandomProjectNameFemale()
+    {
         $this->assertInternalType('string', RandomProject::getProjectNameFemale());
     }
 
     /**
      * @test
      */
-    public function test_getRandomProjectNameFemale_default() {
+    public function testGetRandomProjectNameFemaleDefault()
+    {
         $name = RandomProject::getProjectNameFemale();
-
         $this->assertInternalType('string', $name);
     }
 
     /**
      * @test
      */
-    public function test_getRandomProjectNameFemale_forChar() {
+    public function testGetRandomProjectNameFemaleForChar()
+    {
         $name = RandomProject::getProjectNameFemale('b');
-
         $this->assertInternalType('string', $name);
         $this->assertEquals('b', strtolower($name[0]));
     }
@@ -74,9 +77,9 @@ class RandomProjectTest extends \PHPUnit_Framework_TestCase {
     /**
      * @test
      */
-    public function test_getRandomProjectNameFemale_forWrongChar() {
+    public function testGetRandomProjectNameFemaleForWrongChar()
+    {
         $name = RandomProject::getProjectNameFemale('foo');
-
         $this->assertNull($name);
     }
 }

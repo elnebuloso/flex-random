@@ -8,19 +8,22 @@ use Flex\Random\Text\RandomFullname;
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomFullnameTest extends \PHPUnit_Framework_TestCase {
+class RandomFullnameTest extends \PHPUnit_Framework_TestCase
+{
 
     /**
      * @test
      */
-    public function test_getRandomFullnameMale() {
+    public function testGetRandomFullnameMale()
+    {
         $this->assertInternalType('string', RandomFullname::getFullnameMale());
     }
 
     /**
      * @test
      */
-    public function test_getRandomFullnameFemale() {
+    public function testGetRandomFullnameFemale()
+    {
         $this->assertInternalType('string', RandomFullname::getFullnameFemale());
     }
 }
