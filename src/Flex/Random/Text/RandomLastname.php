@@ -8,11 +8,10 @@ namespace Flex\Random\Text;
  */
 class RandomLastname
 {
-
     /**
      * @var array
      */
-    private static $collection = array();
+    private static $collection = [];
 
     /**
      * returns random lastname
@@ -56,7 +55,7 @@ class RandomLastname
         $filename = $resource . "/lastnames-{$char}.php";
 
         // store fetched collection
-        self::$collection[$char] = (file_exists($filename)) ? include $filename : array();
+        self::$collection[$char] = (file_exists($filename)) ? include $filename : [];
 
         return self::$collection[$char];
     }

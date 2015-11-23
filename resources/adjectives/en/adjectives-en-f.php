@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'fabulous',
     1 => 'faded',
     2 => 'faint',
@@ -68,4 +68,4 @@
     66 => 'future',
     67 => 'futuristic',
     68 => 'fuzzy',
-);
+];

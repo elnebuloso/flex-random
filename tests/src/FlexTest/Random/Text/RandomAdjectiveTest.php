@@ -10,7 +10,6 @@ use Flex\Random\Text\RandomAdjective;
  */
 class RandomAdjectiveTest extends \PHPUnit_Framework_TestCase
 {
-
     /**
      * @test
      */

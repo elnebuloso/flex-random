@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'gabby',
     1 => 'gainful',
     2 => 'gamy',
@@ -43,4 +43,4 @@
     41 => 'gullible',
     42 => 'gusty',
     43 => 'guttural',
-);
+];

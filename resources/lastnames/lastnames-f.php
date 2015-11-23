@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Faaita',
     1 => 'Faas',
     2 => 'Fabacher',
@@ -3237,4 +3237,4 @@
     3235 => 'Fyles',
     3236 => 'Fylnn',
     3237 => 'Fyock',
-);
+];

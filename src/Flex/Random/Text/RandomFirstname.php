@@ -10,11 +10,10 @@ use Flex\Random\Constants;
  */
 class RandomFirstname
 {
-
     /**
      * @var array
      */
-    private static $collection = array();
+    private static $collection = [];
 
     /**
      * returns random firstname
@@ -105,7 +104,7 @@ class RandomFirstname
         $filename = $resource . "/firstnames-{$gender}-{$char}.php";
 
         // store fetched collection
-        self::$collection[$char][$gender] = (file_exists($filename)) ? include $filename : array();
+        self::$collection[$char][$gender] = (file_exists($filename)) ? include $filename : [];
 
         return self::$collection[$char][$gender];
     }

@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Udale',
     1 => 'Udall',
     2 => 'Udell',
@@ -20,4 +20,4 @@
     18 => 'Uriah',
     19 => 'Uriel',
     20 => 'Urson',
-);
+];

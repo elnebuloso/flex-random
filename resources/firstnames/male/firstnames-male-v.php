@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Vachel',
     1 => 'Vaclav',
     2 => 'Vail',
@@ -54,4 +54,4 @@
     52 => 'Vladamir',
     53 => 'Vladimir',
     54 => 'Von',
-);
+];

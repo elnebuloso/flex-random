@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Zabala',
     1 => 'Zabaneh',
     2 => 'Zabarkes',
@@ -952,4 +952,4 @@
     950 => 'Zysk',
     951 => 'Zyskowski',
     952 => 'Zywiec',
-);
+];

@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'habitual',
     1 => 'half',
     2 => 'hallowed',
@@ -49,4 +49,4 @@
     47 => 'husky',
     48 => 'hypnotic',
     49 => 'hysterical',
-);
+];

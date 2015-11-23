@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'rabid',
     1 => 'racial',
     2 => 'ragged',
@@ -46,4 +46,4 @@
     44 => 'rural',
     45 => 'rustic',
     46 => 'ruthless',
-);
+];

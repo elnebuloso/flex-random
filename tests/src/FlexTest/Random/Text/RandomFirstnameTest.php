@@ -10,7 +10,6 @@ use Flex\Random\Text\RandomFirstname;
  */
 class RandomFirstnameTest extends \PHPUnit_Framework_TestCase
 {
-
     /**
      * @test
      */

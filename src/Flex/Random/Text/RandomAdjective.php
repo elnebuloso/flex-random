@@ -8,11 +8,10 @@ namespace Flex\Random\Text;
  */
 class RandomAdjective
 {
-
     /**
      * @var array
      */
-    private static $collection = array();
+    private static $collection = [];
 
     /**
      * returns random adjective
@@ -59,7 +58,7 @@ class RandomAdjective
         $filename = $resource . "/adjectives-{$lang}-{$char}.php";
 
         // store fetched collection
-        self::$collection[$char][$lang] = (file_exists($filename)) ? include $filename : array();
+        self::$collection[$char][$lang] = (file_exists($filename)) ? include $filename : [];
 
         return self::$collection[$char][$lang];
     }

@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Ba',
     1 => 'Baab',
     2 => 'Baack',
@@ -8128,4 +8128,4 @@
     8126 => 'Bywater',
     8127 => 'Bywaters',
     8128 => 'Bzhyan',
-);
+];

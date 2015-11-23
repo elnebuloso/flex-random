@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'aback',
     1 => 'abaft',
     2 => 'abandoned',
@@ -83,4 +83,4 @@
     81 => 'awesome',
     82 => 'awful',
     83 => 'axiomatic',
-);
+];

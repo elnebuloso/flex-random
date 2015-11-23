@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Jaap',
     1 => 'Jaarda',
     2 => 'Jabaay',
@@ -1144,4 +1144,4 @@
     1142 => 'Juvenal',
     1143 => 'Juvera',
     1144 => 'Juza',
-);
+];

@@ -8,7 +8,6 @@ namespace Flex\Random\Text;
  */
 class RandomProject
 {
-
     /**
      * returns male project name
      *

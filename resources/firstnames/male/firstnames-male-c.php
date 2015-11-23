@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Cad',
     1 => 'Caddric',
     2 => 'Caesar',
@@ -276,4 +276,4 @@
     274 => 'Cyrille',
     275 => 'Cyrillus',
     276 => 'Cyrus',
-);
+];

@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Ma',
     1 => 'Maack',
     2 => 'Maag',
@@ -7635,4 +7635,4 @@
     7633 => 'Mysliwiec',
     7634 => 'Mytych',
     7635 => 'Myung',
-);
+];

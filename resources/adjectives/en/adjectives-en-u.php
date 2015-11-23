@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'ubiquitous',
     1 => 'ugliest',
     2 => 'ugly',
@@ -39,4 +39,4 @@
     37 => 'utopian',
     38 => 'utter',
     39 => 'uttermost',
-);
+];

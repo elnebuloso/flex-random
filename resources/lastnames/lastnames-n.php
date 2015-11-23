@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Na',
     1 => 'Naab',
     2 => 'Naas',
@@ -1828,4 +1828,4 @@
     1826 => 'Nystrom',
     1827 => 'Nyswonger',
     1828 => 'Nyulassy',
-);
+];

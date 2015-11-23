@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'labored',
     1 => 'lackadaisical',
     2 => 'lacking',
@@ -46,4 +46,4 @@
     44 => 'luxuriant',
     45 => 'lying',
     46 => 'lyrical',
-);
+];

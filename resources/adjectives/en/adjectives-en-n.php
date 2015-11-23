@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'naive',
     1 => 'nappy',
     2 => 'narrow',
@@ -35,4 +35,4 @@
     33 => 'numerous',
     34 => 'nutritious',
     35 => 'nutty',
-);
+];

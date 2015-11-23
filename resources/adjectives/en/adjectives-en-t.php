@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'taboo',
     1 => 'tacit',
     2 => 'tacky',
@@ -62,4 +62,4 @@
     60 => 'truthful',
     61 => 'two',
     62 => 'typical',
-);
+];

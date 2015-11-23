@@ -10,7 +10,6 @@ use Flex\Random\Text\RandomWord;
  */
 class RandomWordTest extends \PHPUnit_Framework_TestCase
 {
-
     /**
      * @test
      */

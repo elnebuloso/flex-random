@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'daffy',
     1 => 'daily',
     2 => 'damaged',
@@ -64,4 +64,4 @@
     62 => 'dusty',
     63 => 'dynamic',
     64 => 'dysfunctional',
-);
+];

@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'macabre',
     1 => 'macho',
     2 => 'maddening',
@@ -52,4 +52,4 @@
     50 => 'mushy',
     51 => 'mute',
     52 => 'mysterious',
-);
+];

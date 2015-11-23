@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Quent',
     1 => 'Quentin',
     2 => 'Quill',
@@ -11,4 +11,4 @@
     9 => 'Quintin',
     10 => 'Quinton',
     11 => 'Quintus',
-);
+];

@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Ubaldo',
     1 => 'Uballe',
     2 => 'Ubence',
@@ -395,4 +395,4 @@
     393 => 'Uzzell',
     394 => 'Uzzle',
     395 => 'Uzzo',
-);
+];

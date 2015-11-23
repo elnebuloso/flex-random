@@ -8,7 +8,6 @@ namespace Flex\Random;
  */
 interface Constants
 {
-
     /**
      * @var string
      */

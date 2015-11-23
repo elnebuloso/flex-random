@@ -8,7 +8,6 @@ namespace Flex\Random\Text;
  */
 class RandomSentence
 {
-
     /**
      * returns random sentence for given number of words
      *
@@ -18,7 +17,7 @@ class RandomSentence
     public static function get($count = null)
     {
         $count = empty($count) ? mt_rand(8, 25) : $count;
-        $words = array();
+        $words = [];
 
         for ($a = 0; $a < $count; $a++) {
             // random word

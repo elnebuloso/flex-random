@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Qadeer',
     1 => 'Qadir',
     2 => 'Qare',
@@ -241,4 +241,4 @@
     239 => 'Quoss',
     240 => 'Quraishi',
     241 => 'Qureshi',
-);
+];

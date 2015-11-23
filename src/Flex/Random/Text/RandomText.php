@@ -8,7 +8,6 @@ namespace Flex\Random\Text;
  */
 class RandomText
 {
-
     /**
      * return random text for given numbers of sentences
      *

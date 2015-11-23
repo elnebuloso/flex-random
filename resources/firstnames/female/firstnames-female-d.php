@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Dacey',
     1 => 'Dacia',
     2 => 'Dacie',
@@ -314,4 +314,4 @@
     312 => 'Dyanne',
     313 => 'Dyna',
     314 => 'Dynah',
-);
+];

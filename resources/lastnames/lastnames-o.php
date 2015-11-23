@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Oachs',
     1 => 'Oajaca',
     2 => 'Oak',
@@ -1448,4 +1448,4 @@
     1446 => 'Ozols',
     1447 => 'Ozuna',
     1448 => 'Ozzella',
-);
+];

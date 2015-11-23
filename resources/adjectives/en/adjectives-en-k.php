@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'kaput',
     1 => 'keen',
     2 => 'kind',
@@ -8,4 +8,4 @@
     6 => 'knowing',
     7 => 'knowledgeable',
     8 => 'known',
-);
+];

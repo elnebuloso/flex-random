@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Bab',
     1 => 'Babara',
     2 => 'Babb',
@@ -256,4 +256,4 @@
     254 => 'Bunni',
     255 => 'Bunnie',
     256 => 'Bunny',
-);
+];

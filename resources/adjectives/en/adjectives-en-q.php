@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'quack',
     1 => 'quaint',
     2 => 'quarrelsome',
@@ -9,4 +9,4 @@
     7 => 'quirky',
     8 => 'quixotic',
     9 => 'quizzical',
-);
+];

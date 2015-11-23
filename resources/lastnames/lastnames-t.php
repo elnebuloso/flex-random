@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Ta',
     1 => 'Taaffe',
     2 => 'Taake',
@@ -3449,4 +3449,4 @@
     3447 => 'Tyus',
     3448 => 'Tzeng',
     3449 => 'Tzeremes',
-);
+];

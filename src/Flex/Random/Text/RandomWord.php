@@ -8,7 +8,6 @@ namespace Flex\Random\Text;
  */
 class RandomWord
 {
-
     /**
      * @var string
      */

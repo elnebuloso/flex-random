@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'oafish',
     1 => 'obedient',
     2 => 'obeisant',
@@ -33,4 +33,4 @@
     31 => 'overrated',
     32 => 'overt',
     33 => 'overwrought',
-);
+];

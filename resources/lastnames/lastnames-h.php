@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Ha',
     1 => 'Haab',
     2 => 'Haaby',
@@ -5188,4 +5188,4 @@
     5186 => 'Hytros',
     5187 => 'Hyun',
     5188 => 'Hyzer',
-);
+];

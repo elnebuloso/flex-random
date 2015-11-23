@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'jaded',
     1 => 'jagged',
     2 => 'jazzy',
@@ -12,4 +12,4 @@
     10 => 'jumbled',
     11 => 'jumpy',
     12 => 'juvenile',
-);
+];

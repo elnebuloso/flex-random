@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'icky',
     1 => 'icy',
     2 => 'idiotic',
@@ -36,4 +36,4 @@
     34 => 'irate',
     35 => 'irritating',
     36 => 'itchy',
-);
+];

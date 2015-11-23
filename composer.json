@@ -1,5 +1,5 @@
 {
-    "name": "elnebuloso\/flex-random",
+    "name": "elnebuloso/flex-random",
     "type": "library",
     "license": "MIT",
     "description": "multiple generators for random content",
@@ -14,11 +14,11 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.4.0"
     },
     "autoload": {
         "psr-0": {
-            "Flex\\": "src\/"
+            "Flex\\": "src/"
         }
     }
 }

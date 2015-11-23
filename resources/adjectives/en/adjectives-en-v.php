@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'vacuous',
     1 => 'vagabond',
     2 => 'vague',
@@ -18,4 +18,4 @@
     16 => 'volatile',
     17 => 'voracious',
     18 => 'vulgar',
-);
+];

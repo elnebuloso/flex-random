@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Aaberg',
     1 => 'Aaby',
     2 => 'Aadland',
@@ -3296,4 +3296,4 @@
     3294 => 'Azzaro',
     3295 => 'Azznara',
     3296 => 'Azzopardi',
-);
+];

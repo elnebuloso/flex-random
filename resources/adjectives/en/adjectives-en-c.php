@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'cagey',
     1 => 'calculating',
     2 => 'callous',
@@ -69,4 +69,4 @@
     67 => 'cute',
     68 => 'cute',
     69 => 'cynical',
-);
+];

@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Va',
     1 => 'Vaca',
     2 => 'Vacante',
@@ -2084,4 +2084,4 @@
     2082 => 'Vy',
     2083 => 'Vyas',
     2084 => 'Vyhnal',
-);
+];

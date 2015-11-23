@@ -8,7 +8,6 @@ namespace Flex\Random\Text;
  */
 class RandomChar
 {
-
     /**
      * returns random char
      *

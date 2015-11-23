@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'painful',
     1 => 'painstaking',
     2 => 'pale',
@@ -63,4 +63,4 @@
     61 => 'pushy',
     62 => 'puzzled',
     63 => 'puzzling',
-);
+];

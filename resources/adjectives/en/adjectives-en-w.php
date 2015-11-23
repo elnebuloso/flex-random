@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'wacky',
     1 => 'waggish',
     2 => 'waiting',
@@ -46,4 +46,4 @@
     44 => 'wretched',
     45 => 'wrong',
     46 => 'wry',
-);
+];

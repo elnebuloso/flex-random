@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'sable',
     1 => 'sad',
     2 => 'safe',
@@ -127,4 +127,4 @@
     125 => 'swift',
     126 => 'symptomatic',
     127 => 'synonymous',
-);
+];

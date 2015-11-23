@@ -1,4 +1,4 @@
-<?php return array(
+<?php return [
     0 => 'Waack',
     1 => 'Waag',
     2 => 'Waaga',
@@ -3207,4 +3207,4 @@
     3205 => 'Wyzard',
     3206 => 'Wyze',
     3207 => 'Wzorek',
-);
+];
