@@ -1,7 +1,7 @@
 <?php return [
-    0 => 'zany',
-    1 => 'zealous',
-    2 => 'zesty',
-    3 => 'zippy',
-    4 => 'zonked',
+    'zany',
+    'zealous',
+    'zesty',
+    'zippy',
+    'zonked',
 ];

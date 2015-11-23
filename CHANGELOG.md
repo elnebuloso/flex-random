@@ -3,6 +3,7 @@
 ## 3.0.0
 
 - no support php 5.3
+- updated random resources files
 
 ## 2.0.12, 2.0.13
 

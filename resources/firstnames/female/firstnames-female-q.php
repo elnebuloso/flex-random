@@ -1,10 +1,10 @@
 <?php return [
-    0 => 'Queenie',
-    1 => 'Quentin',
-    2 => 'Querida',
-    3 => 'Quinn',
-    4 => 'Quinta',
-    5 => 'Quintana',
-    6 => 'Quintilla',
-    7 => 'Quintina',
+    'Queenie',
+    'Quentin',
+    'Querida',
+    'Quinn',
+    'Quinta',
+    'Quintana',
+    'Quintilla',
+    'Quintina',
 ];

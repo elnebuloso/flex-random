@@ -1,7 +1,7 @@
 <?php return [
-    0 => 'Xaviera',
-    1 => 'Xena',
-    2 => 'Xenia',
-    3 => 'Xylia',
-    4 => 'Xylina',
+    'Xaviera',
+    'Xena',
+    'Xenia',
+    'Xylia',
+    'Xylina',
 ];
