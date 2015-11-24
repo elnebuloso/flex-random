@@ -78,6 +78,11 @@ class RandomFirstnameTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInternalType('string', $name);
         $this->assertEquals('a', $char);
+
+        foreach (range('a', 'z') as $char) {
+            $name = RandomFirstname::getFirstnameMale($char);
+            $this->assertNotEmpty($name, 'missing RandomFirstname::getFirstnameMale for char ' . $char);
+        }
     }
 
     /**
@@ -107,6 +112,11 @@ class RandomFirstnameTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInternalType('string', $name);
         $this->assertEquals('a', $char);
+
+        foreach (range('a', 'z') as $char) {
+            $name = RandomFirstname::getFirstnameFemale($char);
+            $this->assertNotEmpty($name, 'missing RandomFirstname::getFirstnameFemale for char ' . $char);
+        }
     }
 
     /**

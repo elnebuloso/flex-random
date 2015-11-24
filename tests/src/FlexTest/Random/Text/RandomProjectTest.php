@@ -35,6 +35,11 @@ class RandomProjectTest extends \PHPUnit_Framework_TestCase
         $name = RandomProject::getProjectNameMale('b');
         $this->assertInternalType('string', $name);
         $this->assertEquals('b', strtolower($name[0]));
+
+        foreach (range('a', 'z') as $char) {
+            $name = RandomProject::getProjectNameMale($char);
+            $this->assertNotEmpty($name, 'missing RandomProject::getProjectNameMale for char ' . $char);
+        }
     }
 
     /**
@@ -71,6 +76,11 @@ class RandomProjectTest extends \PHPUnit_Framework_TestCase
         $name = RandomProject::getProjectNameFemale('b');
         $this->assertInternalType('string', $name);
         $this->assertEquals('b', strtolower($name[0]));
+
+        foreach (range('a', 'z') as $char) {
+            $name = RandomProject::getProjectNameFemale($char);
+            $this->assertNotEmpty($name, 'missing RandomProject::getProjectNameFemale for char ' . $char);
+        }
     }
 
     /**

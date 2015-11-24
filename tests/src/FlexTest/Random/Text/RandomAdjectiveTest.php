@@ -61,6 +61,11 @@ class RandomAdjectiveTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInternalType('string', $word);
         $this->assertEquals('a', $char);
+
+        foreach (range('a', 'z') as $char) {
+            $word = RandomAdjective::getAdjective($char);
+            $this->assertNotEmpty($word, 'missing RandomAdjective::getAdjective for char ' . $char);
+        }
     }
 
     /**

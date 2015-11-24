@@ -65,6 +65,11 @@ class RandomLastnameTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInternalType('string', $name);
         $this->assertEquals('a', $char);
+
+        foreach (range('a', 'z') as $char) {
+            $name = RandomLastname::getLastname($char);
+            $this->assertNotEmpty($name, 'missing RandomLastname::getLastname for char ' . $char);
+        }
     }
 
     /**
