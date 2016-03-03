@@ -1,6 +1,7 @@
 # flex-random
 
 [![Build Status](https://travis-ci.org/elnebuloso/flex-random.svg?branch=master)](https://travis-ci.org/elnebuloso/flex-random)
+[![Coverage Status](https://coveralls.io/repos/github/elnebuloso/flex-random/badge.svg?branch=master)](https://coveralls.io/github/elnebuloso/flex-random?branch=master)
 
 ## Requirements
 
