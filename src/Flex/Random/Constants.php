@@ -1,5 +1,5 @@
 <?php
-namespace Flex\Random;
+namespace elnebuloso\Flex\Random;
 
 /**
  * Class Constants

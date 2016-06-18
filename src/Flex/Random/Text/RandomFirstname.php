@@ -1,7 +1,7 @@
 <?php
-namespace Flex\Random\Text;
+namespace elnebuloso\Flex\Random\Text;
 
-use Flex\Random\Constants;
+use elnebuloso\Flex\Random\Constants;
 
 /**
  * Class RandomFirstname

@@ -1,14 +1,15 @@
 <?php
-namespace FlexTest\Text;
+namespace elnebuloso\FlexTest\Text;
 
-use Flex\Random\Text\RandomFullname;
+use elnebuloso\Flex\Random\Text\RandomFullname;
+use PHPUnit_Framework_TestCase;
 
 /**
  * Class RandomFullnameTest
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomFullnameTest extends \PHPUnit_Framework_TestCase
+class RandomFullnameTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @test

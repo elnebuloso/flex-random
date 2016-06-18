@@ -1,5 +1,5 @@
 <?php
-namespace Flex\Random\Text;
+namespace elnebuloso\Flex\Random\Text;
 
 /**
  * Class RandomAdjective

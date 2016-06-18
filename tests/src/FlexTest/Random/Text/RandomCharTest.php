@@ -1,14 +1,15 @@
 <?php
-namespace FlexTest\Text;
+namespace elnebuloso\FlexTest\Text;
 
-use Flex\Random\Text\RandomChar;
+use elnebuloso\Flex\Random\Text\RandomChar;
+use PHPUnit_Framework_TestCase;
 
 /**
  * Class RandomCharTest
  *
  * @author Jeff Tunessen <jeff.tunessen@gmail.com>
  */
-class RandomCharTest extends \PHPUnit_Framework_TestCase
+class RandomCharTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @test
