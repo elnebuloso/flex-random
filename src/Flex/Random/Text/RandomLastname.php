@@ -21,7 +21,7 @@ class RandomLastname
      */
     public static function getLastname($char = null)
     {
-        if (is_null($char)) {
+        if ($char === null) {
             $char = RandomChar::get();
         }
 
