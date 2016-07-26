@@ -54,7 +54,7 @@ class RandomAdjective
             return self::$collection[$char][$lang];
         }
 
-        $resource = realpath(dirname(__FILE__) . '/../../../../resources/adjectives/' . $lang);
+        $resource = realpath(dirname(__FILE__) . '/../../../../../resources/adjectives/' . $lang);
         $filename = $resource . "/adjectives-{$lang}-{$char}.php";
 
         // store fetched collection

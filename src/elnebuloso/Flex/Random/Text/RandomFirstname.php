@@ -100,7 +100,7 @@ class RandomFirstname
             return self::$collection[$char][$gender];
         }
 
-        $resource = realpath(dirname(__FILE__) . '/../../../../resources/firstnames/' . $gender);
+        $resource = realpath(dirname(__FILE__) . '/../../../../../resources/firstnames/' . $gender);
         $filename = $resource . "/firstnames-{$gender}-{$char}.php";
 
         // store fetched collection
